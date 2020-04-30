@@ -1,0 +1,11 @@
+Command to start ZooKeeper :
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties 
+
+Command to start Kafka-Broker:
+bin\windows\kafka-server-start.bat config\server.properties
+
+Command to create Topic:
+bin\windows\kafka-topics.bat --create --topic MyTestTopic --replication-factor 1 --partitions 1 --bootstrap-server 127.0.0.1:9092
+
+Command to create commnd line consumes:
+bin\windows\kafka-console-consumer.bat --bootstrap-server 127.0.0.1:9092 --topic MyTestTopic2
